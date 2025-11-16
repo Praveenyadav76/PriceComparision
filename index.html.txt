@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Price Comparison Website Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#" data-target="home" class="nav-link active">PriceCompare</a>
+      </div>
+      <div class="nav-links">
+        <a href="#" data-target="home" class="nav-link active">Home</a>
+        <a href="#" data-target="categories" class="nav-link">Categories</a>
+        <a href="#" data-target="about" class="nav-link">About</a>
+        <a href="#" data-target="account" class="nav-link">Account</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Homepage -->
+    <section id="home" class="active" aria-label="Homepage">
+      <section class="search-bar" role="search" aria-label="Product search">
+        <input type="text" placeholder="Search for products..." aria-label="Search for products"/>
+        <button type="submit" aria-label="Search">Search</button>
+      </section>
+
+      <section class="featured-products" aria-label="Featured products">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/220x150?text=Product+1" alt="Product 1 Image" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Product 1</h3>
+              <div class="product-price">₹499</div>
+              <div class="product-actions">
+                <button class="view-btn" aria-label="View Product 1">View</button>
+                <button class="compare-btn" aria-label="Compare Product 1">Compare</button>
+              </div>
+            </div>
+          </article>
+          <!-- Repeat other product cards similarly -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/220x150?text=Product+2" alt="Product 2 Image" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Product 2</h3>
+              <div class="product-price">₹899</div>
+              <div class="product-actions">
+                <button class="view-btn" aria-label="View Product 2">View</button>
+                <button class="compare-btn" aria-label="Compare Product 2">Compare</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/220x150?text=Product+3" alt="Product 3 Image" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Product 3</h3>
+              <div class="product-price">₹1,299</div>
+              <div class="product-actions">
+                <button class="view-btn" aria-label="View Product 3">View</button>
+                <button class="compare-btn" aria-label="Compare Product 3">Compare</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/220x150?text=Product+4" alt="Product 4 Image" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Product 4</h3>
+              <div class="product-price">₹2,499</div>
+              <div class="product-actions">
+                <button class="view-btn" aria-label="View Product 4">View</button>
+                <button class="compare-btn" aria-label="Compare Product 4">Compare</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" aria-label="Categories">
+      <h1>Categories</h1>
+      <section class="categories-grid" aria-label="Product categories">
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#128187;</div>
+          <div class="category-title">Electronics</div>
+        </div>
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#128100;</div>
+          <div class="category-title">Fashion</div>
+        </div>
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#127874;</div>
+          <div class="category-title">Toys & Games</div>
+        </div>
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#127950;</div>
+          <div class="category-title">Home & Garden</div>
+        </div>
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#128218;</div>
+          <div class="category-title">Books</div>
+        </div>
+        <div class="category-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="category-icon">&#127859;</div>
+          <div class="category-title">Groceries</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-label="About Us">
+      <h1>About Us</h1>
+      <section class="about-content">
+        <p>Welcome to PriceCompare, your trusted platform for comparing prices of products from multiple online retailers. Our goal is to help you find the best deals quickly and easily by presenting clear price comparisons in a user-friendly interface.</p>
+        <p>We focus on simplicity, readability, and accessibility to ensure that every shopper can make informed purchasing decisions. Our site features a clean layout, responsive product grids, and essential features like product search and category browsing.</p>
+        <p>This prototype serves as the starting foundation for a full price comparison system, with plans for future enhancements such as dynamic product loading, comprehensive price aggregation, detailed comparison tables, and seamless backend integration.</p>
+        <p>Thank you for choosing PriceCompare. We are committed to helping you save time and money through transparent and reliable price comparisons.</p>
+      </section>
+    </section>
+
+    <!-- Account -->
+    <section id="account" aria-label="Account Management">
+      <div class="account-form" role="form" aria-labelledby="account-form-title">
+        <h2 id="account-form-title">Account Login</h2>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="sign-in-btn">Sign In</button>
+          <button type="button" class="sign-up-btn">Sign Up</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Price Comparison Website. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
